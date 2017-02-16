@@ -8,5 +8,6 @@ simple library to read gpio state
     
     gpiostate.export(pin)
     gpiostate.read(pin)
+    print(gpiostate.state)
 
  
