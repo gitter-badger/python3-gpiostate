@@ -13,3 +13,10 @@ def export(pin):
     #print(var66343)
     os.system(var9978)
     os.system(var66343)
+
+def write(pin, stateW):
+    if stateW == "on":
+
+    if stateW == "off":
+
+
