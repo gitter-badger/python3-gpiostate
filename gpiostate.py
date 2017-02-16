@@ -1,5 +1,6 @@
 import os
 import time
+import decimal
 
 def read(pin):
     global sysClass, state
@@ -32,8 +33,8 @@ def flip(pin):
         os.system(var8000)
 def flash(pin, dur, times):
     pinz = str(pin)
-    timex = int(times)
-    durx = int(dur)
+    timex = decimal(times)
+    durx = decimal(dur)
     for x in range(0, timex):
         var8 = ("echo 0 > /sys/class/gpio/gpio" + pinz + "/value")
         os.system(var8)
