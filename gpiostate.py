@@ -5,9 +5,11 @@ def read(pin):
         state = int(gpState.read())
 
 def export(pin):
-    import os
+    #import os
     pin1f = str(pin)
-    var9978 = str('echo', pin, '> /sys/class/gpio/export')
-    var66343 = str('echo out > /sys/class/gpio/gpio' + pin1f + '/direction')
-    os.system(var9978)
-    os.system(var66343)
+    var9978 = ('echo', pin, '> /sys/class/gpio/export')
+    var66343 = ('echo out > /sys/class/gpio/gpio' + pin1f + '/direction')
+    print(var9978)
+    print(var66343)
+    #os.system(var9978)
+    #os.system(var66343)
