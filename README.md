@@ -16,4 +16,9 @@ simple library to read gpio state
     
     # write state
     gpiostate.write(pin, stateW) # stateW [on/off]
+    
+    # write on
+    gpiostate.write(pin, on)
  
+    # write of
+    gpiostate.write(pin, off)
