@@ -16,5 +16,5 @@ setup(
     py_modules       = ['ez_setup'],
     url              = 'https://github.com/growmaster420/python3-gpiostate',
     keywords         = 'gpiostate',
-    packages=find_packages()
+    packages         = find_packages()
 )
