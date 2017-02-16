@@ -6,7 +6,11 @@ simple library to read gpio state
 
     import gpiostate
     
+    #export (must be root)
+    
     gpiostate.export(pin)
+    
+    # read state
     gpiostate.read(pin)
     print(gpiostate.state)
 
