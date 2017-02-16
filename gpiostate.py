@@ -1,3 +1,5 @@
+import os
+
 def read(pin):
     global sysClass, state
     sysClass = '/sys/class/gpio/gpio' + str(pin) + '/value'
@@ -5,7 +7,6 @@ def read(pin):
         state = int(gpState.read())
 
 def export(pin):
-    import os
     pin1f = str(pin)
     var9978 = ('echo ' + pin1f + ' > /sys/class/gpio/export')
     var66343 = ('echo out > /sys/class/gpio/gpio' + pin1f + '/direction')
@@ -16,7 +17,9 @@ def export(pin):
 
 def write(pin, stateW):
     if stateW == "on":
-
+        var444 = ("echo 0 > /sys/class/gpio/gpio" + pin + "/value")
+        os.system(var444)
     if stateW == "off":
-
+        var666 = ("echo 1 > /sys/class/gpio/gpio" + pin + "/value")
+        os.system(var666)
 
