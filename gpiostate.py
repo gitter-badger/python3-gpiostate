@@ -24,7 +24,7 @@ def write(pin, stateW):
 
 def flip(pin):
     read(pin)
-    var32 = read.state
+    var32 = state
     print(var32)
     pinq = str(pin)
     if var32 == 0:
