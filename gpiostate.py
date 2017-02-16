@@ -23,7 +23,8 @@ def write(pin, stateW):
         os.system(var666)
 
 def flip(pin):
-    var32 = read(pin)
+    read(pin)
+    var32 = read.state
     print(var32)
     pinq = str(pin)
     if var32 == 0:
