@@ -16,14 +16,14 @@ simple library to read and write gpio state
     gpiostate.read(pin)
     print(gpiostate.state)
     
-    # write state
+    # write state (must be root)
     gpiostate.write(pin, stateW) # stateW [on/off]
     
-    # write on
+    # write on (must be root)
     gpiostate.write(pin, on)
  
-    # write of
+    # write off (must be root)
     gpiostate.write(pin, off)
     
-    # flip state
+    # flip state (must be root)
     gpiostate.flip(pin)  
