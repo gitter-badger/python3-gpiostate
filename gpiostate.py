@@ -24,6 +24,7 @@ def write(pin, stateW):
 
 def flip(pin):
     var32 = read(pin)
+    print(var32)
     pinq = str(pin)
     if var32 == 0:
         var9000 = ("echo 1 > /sys/class/gpio/gpio" + pinq + "/value")
