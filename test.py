@@ -1,7 +1,6 @@
 import gpiostate
-
+varf1 = int(input("pin to test? \n"))
 while True:
-    varf1 = int(input("pin to test? \n"))
     ch1 = input("export or read or write? \n")
     if ch1 == "read":
         gpiostate.read(varf1)
