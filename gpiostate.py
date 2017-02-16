@@ -1,6 +1,5 @@
 import os
 import time
-import decimal
 
 def read(pin):
     global sysClass, state
