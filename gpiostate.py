@@ -30,9 +30,9 @@ def flip(pin):
     if var32 == 1:
         var8000 = ("echo 0 > /sys/class/gpio/gpio" + pinq + "/value")
         os.system(var8000)
-def flash(pin, dur, times)
+def flash(pin, dur, times):
     pinz = str(pin)
-    for x in range(0, times)
+    for x in range(0, times):
     var9 = ("echo 1 > /sys/class/gpio/gpio" + pinz + "/value")
     os.system(var9)
     time.sleep(dur)
