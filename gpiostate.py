@@ -1,4 +1,4 @@
-def relay(pin):
+def read(pin):
     global sysClass, state
     sysClass = '/sys/class/gpio/gpio' + str(pin) + '/value'
     with open(sysClass) as gpState:
