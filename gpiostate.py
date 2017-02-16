@@ -24,3 +24,12 @@ def write(pin, stateW):
         var666 = ("echo 1 > /sys/class/gpio/gpio" + pind + "/value")
         os.system(var666)
 
+def flip(pin):
+    var32 = read(pin)
+    pinq = str(pin)
+    if var32 == 0:
+        var9000 = ("echo 1 > /sys/class/gpio/gpio" + pinq + "/value")
+        os.system(var9000)
+    if var32 == 1:
+        var8000 = ("echo 0 > /sys/class/gpio/gpio" + pinq + "/value")
+        os.system(var8000)
