@@ -24,3 +24,6 @@ simple library to read and write gpio state
  
     # write of
     gpiostate.write(pin, off)
+    
+    # flip state
+    gpiostate.flip(pin)  
