@@ -8,7 +8,7 @@ simple library to read and write gpio state
     
     #export (must be root)
     
-    gpiostate.export(pin)
+    gpiostate.export(pin) # pin must be exported to read or write 
     
     # read state
     gpiostate.read(pin)
