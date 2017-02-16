@@ -1,7 +1,7 @@
 My first Library!!
 
 # python3-Gpio-library
-simple library to read gpio state
+simple library to read and write gpio state
  ## use
 
     import gpiostate
