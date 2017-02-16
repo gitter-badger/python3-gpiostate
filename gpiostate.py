@@ -35,9 +35,9 @@ def flash(pin, dur, times):
     timex = int(times)
     durx = int(dur)
     for x in range(0, timex):
-        var9 = ("echo 1 > /sys/class/gpio/gpio" + pinz + "/value")
-        os.system(var9)
-        time.sleep(durx)
         var8 = ("echo 0 > /sys/class/gpio/gpio" + pinz + "/value")
         os.system(var8)
+        time.sleep(durx)
+        var9 = ("echo 1 > /sys/class/gpio/gpio" + pinz + "/value")
+        os.system(var9)
         time.sleep(durx)
