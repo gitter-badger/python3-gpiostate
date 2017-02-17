@@ -2,6 +2,8 @@ My first Library!!
 
 # python3-Gpio-library
 
+[![Join the chat at https://gitter.im/python3-gpiostate/Lobby](https://badges.gitter.im/python3-gpiostate/Lobby.svg)](https://gitter.im/python3-gpiostate/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 simple library to read and write gpio state
  
 pins use BCM values 
