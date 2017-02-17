@@ -8,11 +8,15 @@ pins use BCM values
 
 ## use
 
-    import gpiostate
+    import gpiostate 
     
-    ###export### (must be root)
+    ###export###  (must be root) # pin must be exported to read or write
     
-    gpiostate.export(pin) # pin must be exported to read or write 
+    gpiostate.export(pin, dir) #dir = direction in/out   
+
+    ###unexport###
+    
+    gpiostate.unexport(pin)
     
     ###read state###
     gpiostate.read(pin)
