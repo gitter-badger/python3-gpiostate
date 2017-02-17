@@ -6,7 +6,7 @@ simple library to read and write gpio state
  
 pins use BCM values 
 
-tested on raspberry piZero and pi2B, on raspbian and ubuntu core
+tested on raspberry piZero and pi2B, on raspbian and ubuntu core, but I thick it should work on any linux SBC with gpio
 
 requirements{
      python3
