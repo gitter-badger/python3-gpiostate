@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 import gpiostate
 varf1 = int(input("\npin to test? \n"))
 while True:
