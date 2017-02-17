@@ -29,3 +29,7 @@ pins use BCM values
     
     ###flip state###(must be root)
     gpiostate.flip(pin)  
+    
+## need to add
+
+    unexport
