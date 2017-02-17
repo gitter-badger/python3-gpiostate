@@ -6,7 +6,8 @@ while True:
         gpiostate.read(varf1)
         print(gpiostate.state)
     if ch1 == "export":
-        gpiostate.export(varf1)
+        var654=input("\ndirection?\n[in/out]\n")
+        gpiostate.export(varf1,var654)
     if ch1 == "write":
         vard1 = input("\nwrite state\non/off?\n")
         gpiostate.write(varf1, vard1)
