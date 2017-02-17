@@ -15,10 +15,10 @@ def export(pin):
 def write(pin, stateW):
     pind = str(pin)
     if stateW == "on":
-        var444 = ("echo 0 > /sys/class/gpio/gpio" + pind + "/value")
+        var444 = ("echo 1 > /sys/class/gpio/gpio" + pind + "/value")
         os.system(var444)
     if stateW == "off":
-        var666 = ("echo 1 > /sys/class/gpio/gpio" + pind + "/value")
+        var666 = ("echo 0 > /sys/class/gpio/gpio" + pind + "/value")
         os.system(var666)
 def flip(pin):
     read(pin)
