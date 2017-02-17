@@ -6,6 +6,11 @@ simple library to read and write gpio state
  
 pins use BCM values 
 
+tested on raspberry piZero and pi2B, on raspbian and ubuntu core
+
+requirements{
+     python3
+}
 ## use
 
     import gpiostate 
