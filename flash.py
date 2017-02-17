@@ -1,3 +1,4 @@
+# EXAMPLE
 import gpiostate
 import time
 
