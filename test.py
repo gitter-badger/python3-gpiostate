@@ -1,7 +1,7 @@
 import gpiostate
 varf1 = int(input("\npin to test? \n"))
 while True:
-    ch1 = input("\nexport or read or write or flip or flash? \n")
+    ch1 = input("\nexport or read or write or flip or flash or unexport? \n")
     if ch1 == "read":
         gpiostate.read(varf1)
         print(gpiostate.state)
@@ -16,6 +16,8 @@ while True:
         var37 = input("\nduration of sleep?\n")
         var38 = input("\ntimes to flash?\n")
         gpiostate.flash(varf1, var37, var38)
+    if ch1 == "unexport":
+        gpiostate.unexport(varf1)
     if ch1 == "exit":
         exit()
 
