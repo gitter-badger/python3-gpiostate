@@ -6,11 +6,14 @@ def read(pin):
     sysClass = '/sys/class/gpio/gpio' + str(pin) + '/value'
     with open(sysClass) as gpState:
         state = int(gpState.read())
-def export(pin):
+def export(pin, dir):
     pin1f = str(pin)
     var9978 = ('echo ' + pin1f + ' > /sys/class/gpio/export')
-    var66343 = ('echo out > /sys/class/gpio/gpio' + pin1f + '/direction')
     os.system(var9978)
+    if dir == "out":
+        var66343 = ('echo out > /sys/class/gpio/gpio' + pin1f + '/direction')
+    if dir == "in":
+        var66343 = ('echo in > /sys/class/gpio/gpio' + pin1f + '/direction')
     os.system(var66343)
 def write(pin, stateW):
     pind = str(pin)
@@ -41,3 +44,8 @@ def flash(pin, dur, times):
         var9 = ("echo 1 > /sys/class/gpio/gpio" + pinz + "/value")
         os.system(var9)
         time.sleep(durx)
+def unexport(pin):
+    pinm = str(pin)
+    var773554 = ('echo ' + pinm + ' > /sys/class/gpio/unexport')
+    os.system(var773554)
+
