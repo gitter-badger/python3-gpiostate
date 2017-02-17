@@ -16,7 +16,8 @@ while True:
         var37 = input("\nduration of sleep?\n")
         var38 = input("\ntimes to flash?\n")
         gpiostate.flash(varf1, var37, var38)
-
+    if ch1 == "exit":
+        exit()
 
 '''
 
