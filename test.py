@@ -21,10 +21,3 @@ while True:
         gpiostate.unexport(varf1)
     if ch1 == "exit":
         exit()
-
-'''
-
-
-
-
-'''
